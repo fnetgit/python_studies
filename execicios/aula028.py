@@ -18,8 +18,8 @@ Se nada for digitado em nome ou idade:
 user = input('Digite seu nome: ')
 age = input('Digite sua idade: ')
 if len(user) and len(age) > 0:
-    print(f'Seu nome é: {user}')
-    print(f'Seu invertido é: {user[::-1]}')
+    print(f'Seu nome é: {user.title()}')
+    print(f'Seu invertido é: {user.title()[::-1]}')
     if ' ' in user:
         print('Seu nome tem espaços')
         print(f'Seu nome tem {len(user) - user.count(' ')} letras')
