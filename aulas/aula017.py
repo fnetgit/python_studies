@@ -23,3 +23,5 @@ if 10 == 10:
     print('Outro if')
 
 print('Fora do if')
+
+# Aula 18 - Usando debugger
