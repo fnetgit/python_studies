@@ -43,9 +43,16 @@ lista3.insert(0, 5)  # Substitui o item do índice 0 por 5
 print(lista3)
 
 print('\nconcatenação e extend')
+# concatenação cria uma nova lista
+# extend modifica a lista original
 lista_a = [1, 2, 3]
 lista_b = [4, 5, 6]
 lista_c = lista_a + lista_b
 lista_a.extend(lista_b)
 print(lista_c)
 print(lista_a)
+
+# método copy
+la = ['teste', 'oi', 0]
+lb = la  # apontando para la
+lb = la.copy()  # nova lista copiando os valores de la
