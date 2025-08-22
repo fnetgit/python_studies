@@ -12,3 +12,4 @@ elif segundo_valor > primeiro_valor:
 else:
     print(
         f'{primeiro_valor=} é igual a {segundo_valor=}')
+# essa sintaxe de {x=} mostra o nome da variável e o seu valor de uma vez
