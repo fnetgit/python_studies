@@ -36,8 +36,18 @@ for chave in pessoa:
 # values - iterável com os valores
 # items - iterável com chaves e valores
 # setdefault - adiciona valor se a chave não existe
-# copy - retorna uma cópia rasa (shallow copy)
-# deepcopy - retorna uma cópia profunda (deep copy). Precisa ser importado de copy
+
+# copy() - cria uma cópia rasa (shallow copy) do dicionário.
+#           Somente a primeira camada é copiada (o objeto principal que está sendo copiado).
+#           Valores internos mutáveis (listas, outros dicionários)
+#           não são duplicados, apenas referenciados.
+#           Alterar esses objetos mutáveis na cópia afeta o original.
+
+# deepcopy() - cria uma cópia profunda (deep copy) do dicionário.
+#              É necessário importar da biblioteca copy.
+#              Todos os objetos internos são duplicados.
+#              Alterações na cópia não afetam o original, mesmo em valores mutáveis.
+
 # get - obtém uma chave
 # pop - Apaga um item com a chave especificada (del)
 # popitem - Apaga o último item adicionado
