@@ -1,6 +1,6 @@
-# Sets - Conjuntos em Python (tipo set)
+# Sets - Conjuntos (tipo set)
 
-# Sets em Python são mutáveis, porém aceitam apenas
+# Sets são mutáveis, porém aceitam apenas
 # tipos imutáveis como valor interno.
 
 # Criando um set

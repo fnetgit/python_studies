@@ -1,4 +1,4 @@
-# Dicionários em Python (tipo dict)
+# Dicionários (tipo dict)
 
 # Estruturas de dados em pares "chave: valor"
 # Chaves: tipos imutáveis (str, int, float, bool, tuple)
@@ -30,7 +30,7 @@ print()
 for chave in pessoa:
     print(chave, pessoa[chave])
 
-# Métodos úteis dos dicionários em Python
+# Métodos úteis dos dicionários
 # len - quantas chaves
 # keys - iterável com as chaves
 # values - iterável com os valores
