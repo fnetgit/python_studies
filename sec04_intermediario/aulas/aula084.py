@@ -18,6 +18,8 @@ lista = [
 print(lista)
 
 # Mapeamento de dados em list comprehension
+# Transformar cada item de uma coleção em um novo item, seguindo uma regra específica, para criar uma nova coleção.
+
 produtos = [
     {'nome': 'p1', 'preco': 20, },
     {'nome': 'p2', 'preco': 10, },
