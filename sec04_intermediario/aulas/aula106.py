@@ -1,4 +1,5 @@
 # Ordem dos decoradores
+
 def parametros_decorador(nome):
     def decorador(func):
         print('Decorador:', nome)

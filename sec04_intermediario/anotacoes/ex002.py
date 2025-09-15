@@ -23,7 +23,7 @@ furniture_uppercase = [product['nome'].upper()
                        if product['categoria'] == 'Móveis']
 
 # 2
-# {**dicionario_antigo, 'chave_para_mudar': novo_valor}
+                           # {**dicionario_antigo, 'chave_para_mudar': novo_valor}
 
 electronics_with_discount = [{**product, 'preco': round(product['preco'] * 0.9, 2)}
                              if product['categoria'] == "Eletrônicos" and product['preco'] > 100 else product
