@@ -1,5 +1,5 @@
-
 # Quando alguém importar '*' importará apenas o que tem nessa lista:
+
 __all__ = [
     "VARIAVEL",
 ]

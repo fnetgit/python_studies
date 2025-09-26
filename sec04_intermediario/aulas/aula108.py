@@ -2,7 +2,7 @@
 
 from itertools import count
 
-c1 = count(step=8, start=8)
+c1 = count(start=8, step=8)
 r1 = range(8, 100, 8)
 
 print('c1', hasattr(c1, '__iter__')) # é um iterável (objeto a ser percorrido)
