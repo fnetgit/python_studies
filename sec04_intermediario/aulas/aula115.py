@@ -1,16 +1,25 @@
-# Recursividade pt. 2
+# Ambientes virtuais em Python (venv)
 
-# import sys
-# sys.setrecursionlimit(1004)
+# Um ambiente virtual carrega toda a sua instalação
+# do Python para uma pasta no caminho escolhido.
+
+# Ao ativar um ambiente virtual, a instalação do
+# ambiente virtual será usada.
+
+# venv é o módulo que vamos usar para
+# criar ambientes virtuais.
+
+# Você pode dar o nome que preferir para um
+# ambiente virtual, mas os mais comuns são:
+# venv env .venv .env
 
 
-def factorial(n):
-    if n <= 1:
-        return 1
+# Como criar ambientes virtuais
 
-    return n * factorial(n - 1)
+# Abra a pasta do seu projeto no terminal
+# e digite:
+# python3 -m venv venv
 
 
-print(factorial(2))
-print(factorial(5))
-print(factorial(10))
+# para saber o caminho do interpretador python
+# which python3
