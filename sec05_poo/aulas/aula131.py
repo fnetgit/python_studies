@@ -24,10 +24,6 @@
 
 # caneta = Caneta('Azul')
 # print(caneta.get_cor())
-# print(caneta.get_cor())
-# print(caneta.get_cor())
-# print(caneta.get_cor())
-# print(caneta.get_cor())
 
 ###################################
 
@@ -46,10 +42,5 @@ class Caneta:
 
 
 caneta = Caneta('Azul')
-print(caneta.cor)
-print(caneta.cor)
-print(caneta.cor)
-print(caneta.cor)
-print(caneta.cor)
 print(caneta.cor)
 print(caneta.cor_tampa)
