@@ -18,8 +18,6 @@ import enum
 
 # Direcoes = enum.Enum('Direcoes', ['ESQUERDA', 'DIREITA'])
 
-# É melhor fazer com classe do que variável, porque...
-
 
 class Direcoes(enum.Enum):
     ESQUERDA = enum.auto()  # gera um valor automaticamente, a partir do 1
