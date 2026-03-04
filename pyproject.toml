@@ -4,4 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pytz>=2026.1.post1",
+    "types-pytz>=2025.2.0.20251108",
+]
