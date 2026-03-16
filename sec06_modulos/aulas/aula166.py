@@ -1,4 +1,4 @@
-# Calendario e
+# Calendario
 
 import calendar
 
