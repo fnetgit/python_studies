@@ -1,4 +1,4 @@
-# getsize() e stat()
+# getsize() e stat() - informações sobre arquivos
 
 import os
 from datetime import datetime

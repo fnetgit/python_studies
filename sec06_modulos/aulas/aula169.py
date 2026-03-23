@@ -1,4 +1,4 @@
-# os path
+# os path - manipulação de caminhos de arquivos e diretórios
 
 import os
 

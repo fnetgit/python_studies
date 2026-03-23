@@ -1,4 +1,4 @@
-# os.listdir
+# os.listdir - listar arquivos e pastas em um diretório
 
 import os
 

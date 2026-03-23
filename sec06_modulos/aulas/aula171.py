@@ -1,4 +1,4 @@
-# os.walk
+# os.walk - percorrer diretórios
 
 # permite percorrer uma estrutura de diretórios de forma recursiva
 # retorna uma tupla com o caminho do diretório, os subdiretórios e os arquivos
