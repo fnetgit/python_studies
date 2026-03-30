@@ -2,7 +2,9 @@
 
 import random
 
-# Inicializa o gerador de random (por isso "números pseudoaleatórios")
+# Define a semente para garantir a reprodutibilidade dos resultados
+# normalmente a seed padrão é o horário do sistema,
+# o que garante que os números gerados sejam diferentes a cada execução
 # random.seed(0)
 
 # Gera um número inteiro aleatório em um intervalo específico (exclusivo)
@@ -17,16 +19,14 @@ r_uniform = random.uniform(10, 20)
 nomes = ["Ana", "Bia", "Caio", "Duda"]
 # Embaralha os elementos do iterável (modifica o iterável)
 random.shuffle(nomes)
-print(nomes)
+# print(nomes)
 
 # Escolhe N elementos do iterável e retorna outro iterável (sem repetir valores)
 novos_nomes1 = random.sample(nomes, k=3)
-# print(nomes)
 # print(novos_nomes1)
 
-# Escolhe elementos do iterável e retorna outro iterável (repete valores)
+# Escolhe N elementos do iterável e retorna outro iterável (repete valores)
 novos_nomes2 = random.choices(nomes, k=3)
-# print(nomes)
 # print(novos_nomes2)
 
 # Escolhe um elemento aleatório do iterável
