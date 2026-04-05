@@ -95,6 +95,7 @@ dmypy.json
 .vscode/
 
 # Environments
+.env
 env/
 venv/
 ENV/
