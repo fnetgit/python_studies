@@ -2,45 +2,46 @@ from triangle import Triangle
 
 
 def test_is_triangle_true():
-    t = Triangle(3, 4, 5)
-    assert t.is_triangle() is True
+    assert Triangle(3, 4, 5).is_triangle() is True
 
 
-def test_is_triangle_false():
-    t = Triangle(2, 2, 7)
-    assert t.is_triangle() is False
+def test_is_triangle_false_sum_less():
+    assert Triangle(2, 2, 7).is_triangle() is False
 
 
-def test_triangle_type_equilateral():
-    t = Triangle(5, 5, 5)
-    assert t.triangle_type() == "Equilátero"
-
-
-def test_triangle_type_isosceles():
-    t = Triangle(4, 7, 7)
-    assert t.triangle_type() == "Isósceles"
-
-
-def test_triangle_type_scalene():
-    t = Triangle(3, 4, 5)
-    assert t.triangle_type() == "Escaleno"
+def test_is_triangle_false_sum_equal():
+    assert Triangle(1, 2, 3).is_triangle() is False
 
 
 def test_triangle_has_no_zero_sides():
-    t = Triangle(0, 4, 5)
-    assert t.is_triangle() is False
+    assert Triangle(0, 4, 5).is_triangle() is False
+    assert Triangle(4, 0, 5).is_triangle() is False
+    assert Triangle(4, 5, 0).is_triangle() is False
 
 
 def test_triangle_has_no_negative_sides():
-    t = Triangle(-1, 4, 5)
-    assert t.is_triangle() is False
+    assert Triangle(-1, 4, 5).is_triangle() is False
+    assert Triangle(4, -1, 5).is_triangle() is False
+    assert Triangle(4, 5, -1).is_triangle() is False
 
 
 def test_triangle_has_no_sides():
-    t = Triangle(0, 0, 0)
-    assert t.is_triangle() is False
+    assert Triangle(0, 0, 0).is_triangle() is False
+
+
+def test_triangle_type_equilateral():
+    assert Triangle(5, 5, 5).triangle_type() == "Equilátero"
+
+
+def test_triangle_type_isosceles():
+    assert Triangle(4, 7, 7).triangle_type() == "Isósceles"
+    assert Triangle(7, 4, 7).triangle_type() == "Isósceles"
+    assert Triangle(7, 7, 4).triangle_type() == "Isósceles"
+
+
+def test_triangle_type_scalene():
+    assert Triangle(3, 4, 5).triangle_type() == "Escaleno"
 
 
 def test_triangle_type_not_a_triangle():
-    t = Triangle(1, 2, 3)
-    assert t.triangle_type() == "Não é triângulo"
+    assert Triangle(1, 2, 3).triangle_type() == "Não é triângulo"
