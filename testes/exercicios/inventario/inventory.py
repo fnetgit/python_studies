@@ -1,6 +1,5 @@
 # Faça os testes automatizados para o programa abaixo:
 
-from dataclasses import dataclass
 from typing import Dict, List
 
 
@@ -12,12 +11,17 @@ class ProductNotFoundException(Exception):
     """Exceção levantada quando um produto não é localizado no repositório."""
 
 
-@dataclass
 class Product:
-    product_id: str
-    name: str
-    price: float
-    quantity: int
+    def __init__(self, product_id: str, name: str, price: float, quantity: int) -> None:
+        if quantity < 0:
+            raise ValueError("A quantidade de produtos não pode ser negativa.")
+        if not name.strip():
+            raise ValueError("O nome do produto não pode ser vazio.")
+
+        self.product_id = product_id
+        self.name = name
+        self.price = price
+        self.quantity = quantity
 
     def decrease_stock(self, amount: int) -> None:
         if amount <= 0:
