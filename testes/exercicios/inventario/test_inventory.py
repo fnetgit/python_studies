@@ -1,5 +1,26 @@
 import pytest
-from inventory import Product, InsufficientStockException
+from inventory import InsufficientStockException, Product
+
+# uv add pytest-cov para ver a cobertura dos testes
+# pytest --cov=inventario test_inventory.py
+
+
+def test_product_initialization():
+    p = Product("001", "caixa de leite", 4.50, 20)
+    assert p.product_id == "001"
+    assert p.name == "caixa de leite"
+    assert p.price == 4.50
+    assert p.quantity == 20
+
+
+def test_create_item_with_negative_value():
+    with pytest.raises(ValueError):
+        Product("001", "caixa de leite", 4.50, -20)
+
+
+def test_create_item_with_no_name():
+    with pytest.raises(ValueError):
+        Product("001", "", 4.50, 20)
 
 
 @pytest.fixture
