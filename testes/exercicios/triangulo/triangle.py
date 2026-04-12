@@ -20,13 +20,3 @@ class Triangle:
         if self.x == self.y or self.x == self.z or self.y == self.z:
             return "Isósceles"
         return "Escaleno"
-
-
-if __name__ == "__main__":
-    t = Triangle(4, 7, 7)
-
-    if t.is_triangle():
-        print("É um triângulo")
-        print(t.triangle_type())
-    else:
-        print("Não é triângulo")
