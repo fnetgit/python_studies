@@ -13,10 +13,14 @@ class ProductNotFoundException(Exception):
 
 class Product:
     def __init__(self, product_id: str, name: str, price: float, quantity: int) -> None:
-        if quantity < 0:
-            raise ValueError("A quantidade de produtos não pode ser negativa.")
+        if not product_id.strip():
+            raise ValueError("O ID do produto não pode ser vazio.")
         if not name.strip():
             raise ValueError("O nome do produto não pode ser vazio.")
+        if price <= 0:
+            raise ValueError("O preço do produto não pode ser zero ou negativo.")
+        if quantity < 0:
+            raise ValueError("A quantidade de produtos não pode ser negativa.")
 
         self.product_id = product_id
         self.name = name
