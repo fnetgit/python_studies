@@ -9,5 +9,6 @@ dependencies = [
     "pytest-cov>=7.1.0",
     "python-dotenv>=1.2.2",
     "pytz>=2026.1.post1",
+    "requests>=2.33.1",
     "types-pytz>=2025.2.0.20251108",
 ]
